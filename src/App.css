@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Star Jedi Hollow';
+  src: url('./fonts/StarJediHollow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('./fonts/StarJedi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'moonhouse';
+  src: url('./fonts/moonhouse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  position: relative;
+	width: 100%;
+	height: 250px;
+}
+.header-text {
+  font-family: 'moonhouse';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 5.5rem !important;
+	color: #ffd600;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: darkslategray;
+}
+.card_container {
+  border: none;
+  font-family: 'Star Jedi';
+  font-weight: 700;
+  padding: 1%;
+  margin: .25%;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  cursor: pointer;
+}
+
+#loading-spinner-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#loading-spinner {
+  width: 50%;
+  height: 50%;
+  margin: 5rem;
+}
+h2{
+  font-family: 'Star Jedi';
+  font-weight: bold;
+  font-size:3rem!important;
+  color: #ffd600;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  margin: 20px;
+  text-align: left;
+}
+h4 {
+  font-family: 'Star Jedi Hollow';
+  font-size: 10rem;
+  padding: 0px;
+  font-weight: bold;
+  margin: .15rem;
+  color: red;
+}
+th{
+  color: lightgray;
+}
+td{
+  font-weight: bold!important;
+  color:#ffd600!important;
+}
+#search-label {
+  font-family: 'Star Jedi';
+  font-size: 2.5rem !important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 2px!important;
+  color: crimson !important;
+}
+
+#search-bar-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+#buttons-div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#search-bar {
+  font-family: 'moonhouse';
+  font-size: 1.8rem !important;
+  text-align: center;
+  background-color: lightgray;
+  border-style: double;
+  border-width: 4px;
+  border-radius: 8px;
+  border-color: red;
+  width: auto;
+}
+
+#search-button {
+  font-family: 'moonhouse';
+  font-size:1.5rem !important;
+  margin: 5px;
+  padding-left: 10px;
+  text-align: center;
+  letter-spacing: 2px !important;
+  color: antiquewhite;
+  background-color: darkgreen;
+  border-style: double;
+  border-width: 4px;
+  border-radius: 8px;
+  border-color: gray;
+  outline: none;
+}
+
+#search-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#search-button:active {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#search-button:disabled {
+  color: gray;
+  border-color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination {
+  display: flex;
+  justify-content: center;
+  
+}
+.pagination button{
+  font-family: 'moonhouse';
+  font-size: 24px;
+  margin:2rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #ffd600;
+  background-color: black;
+  border-style: double;
+  border-width: 4px;
+  border-radius: 8px;
+  border-color: red;
+  box-shadow: inset 0 1px 1px gray;
+}
+.charcterContainer {
+  margin: 10px 80px 5px 80px;
+  border: 5px solid skyblue;
+  border-radius: 2rem;
+  box-shadow: inset 0 1px 1px #ffd600, 0 0 8px gray;
+  background-color: black;
+}
+.App{
+  background-image: url("./images/space.jpg");
 }
